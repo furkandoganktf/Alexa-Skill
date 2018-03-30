@@ -1,0 +1,17 @@
+{
+  "name": "hello",
+  "description": "Otsimo Ask Letters Alexa Skill",
+  "runtime": "nodejs4.3",
+  "memory": 128,
+  "handler": "lib.default",
+  "hooks": {
+    "build": "../../node_modules/.bin/webpack --config ../../webpack.config.babel.js --bail",
+    "clean": "rm -fr lib"
+  },
+  "environment": {
+    "OTSIMO_APP_ID": "amzn1.ask.skill.c8716801-c684-4035-96db-4ceb1ec22e67",
+    "OTSIMO_STORAGE": "dynamodb",
+    "OTSIMO_DYNAMO_TABLE": "AskNumbersSession",
+    "APEX_FUNCTION_NAME":"ask-letters"
+  }
+}

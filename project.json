@@ -1,0 +1,8 @@
+{
+  "name": "otsimo",
+  "description": "Otsimo Alexa Apps",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::042143839109:role/otsimo_lambda_function",
+  "environment": {}
+}
